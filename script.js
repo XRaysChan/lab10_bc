@@ -1,4 +1,8 @@
+<<<<<<< HEAD
     const contractAddress = "0x8A8ffDd4e7BA19744b7d93c2c404ac941b40e260"
+=======
+    const contractAddress = "addr"
+>>>>>>> 85d98d13f8b17878a5c36118ae4103df2cb461c0
     const contractAbi = [
         {
             "inputs": [
