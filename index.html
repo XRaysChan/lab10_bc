@@ -3,17 +3,32 @@
 <head>
     <meta charset="utf-8">
     <title>lab10_bc bys kai</title>
+
     <!-- Подключение библиотеки Ethers.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.2.0/ethers.umd.js"></script>
 </head>
 <body>
-    <h1>Простой контракт Ethers.js</h1>
+    <h1>Web3 Приложение с Ethers.js</h1>
     
-    <input type="text" id="messageInput" placeholder="Введите сообщение">
-    <button id="setMessageButton">Установить сообщение</button>
-    <button id="getMessageButton">Получить сообщение</button>
+    <!-- Секция подключения кошелька -->
+    <div class="section">
+        <h2>Подключение кошелька</h2>
+        <button id="connectButton">Подключить MetaMask</button>
+        <div class="info" id="accountInfo">
+            Кошелек не подключен
+        </div>
+    </div>
     
-    <p>Сообщение: <span id="messageDisplay"></span></p>
+    <!-- Секция взаимодействия с контрактом -->
+    <div class="section">
+        <h2>Взаимодействие с контрактом</h2>
+        <input type="text" id="messageInput" placeholder="Введите сообщение">
+        <button id="setMessageButton">Установить сообщение</button>
+        <button id="getMessageButton">Получить сообщение</button>
+        
+        <p>Текущее сообщение в контракте: <span id="messageDisplay">-</span></p>
+    </div>
     
     <script src="script.js"></script>
 </body>
+</html>
